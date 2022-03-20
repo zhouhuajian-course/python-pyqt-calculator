@@ -18,6 +18,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QGridLayout, QPush
 3. 实现清空显示器效果。
 """
 
+
 class Calculator:
     """计算器类"""
 
@@ -74,8 +75,3 @@ if __name__ == '__main__':
     calc.win.show()
     # 进入消息循环
     app.exec()
-
-
-
-
-
