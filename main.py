@@ -10,14 +10,6 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QGridLayout, QPushButton
 
-"""
-## 第四课
-
-1. 实现数字按钮点击效果；
-2. 实现符号按钮点击效果；
-3. 实现清空显示器效果。
-"""
-
 
 class Calculator:
     """计算器类"""
@@ -44,6 +36,7 @@ class Calculator:
         display.setFixedHeight(35)
         # 设置显示器只读
         display.setReadOnly(True)
+        self.display = display
 
         # 计算器按钮
         # 按钮配置
@@ -63,7 +56,23 @@ class Calculator:
                 btn.setFixedSize(35, 35)
                 # 往网格布局里面添加按钮
                 layout.addWidget(btn, row + 1, col)
+                if button == 'C':  # clear 清除
+                    btn.clicked.connect(self.clearDisplayText)
+                else:
+                    # 底层的事件 事件函数
+                    # 封装后的信号与槽
+                    # 多个信号绑定同一个槽函数
+                    btn.clicked.connect(self.appendDisplayText)
 
+    def clearDisplayText(self):
+        """清除显示器文本"""
+        self.display.setText('')
+
+    def appendDisplayText(self):
+        """追加显示器文本"""
+        btn = self.win.sender()  # 获取信号的发送者
+        # 追加显示器文本
+        self.display.setText(self.display.text() + btn.text())
 
 
 if __name__ == '__main__':
