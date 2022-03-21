@@ -117,4 +117,55 @@ span verb (BRIDGE)
 [ T ] -nn-
 If a bridge spans a river, it goes from one side to the other.
 横跨
+
+disconnect
+verb [ T ]
+UK  /ˌdɪs.kəˈnekt/ US  /ˌdɪs.kəˈnekt/
+ 
+to unfasten something, especially to break the connection between a supply of electricity, gas, water, etc. and a device or piece of equipment
+切断（电、气、水等）
+
+connect
+verb
+UK  /kəˈnekt/ US  /kəˈnekt/
+connect verb (JOIN)
+ 
+B1 [ I or T ]
+to join or be joined with something else
+（使或被）连接；（使或被）相连
+
+emit
+verb [ T ]
+UK  /iˈmɪt/ US  /iˈmɪt/
+-tt-
+ 
+C2
+to send out a beam, noise, smell, or gas
+发出，射出，散发（光、噪声、气味或气体）
+
+signal
+noun [ C ]
+UK  /ˈsɪɡ.nəl/ US  /ˈsɪɡ.nəl/
+signal noun [C] (ACTION)
+ 
+B2
+an action, movement, or sound that gives information, a message, a warning, or an order
+信号
+
+slot
+noun [ C ]
+UK  /slɒt/ US  /slɑːt/
+slot noun [C] (LONG HOLE)
+ 
+C1
+a long, narrow hole, especially one for putting coins into or for fitting a separate piece into
+狭缝；（尤指）投币口，狭槽
+
+bound
+adjective
+UK  /baʊnd/ US  /baʊnd/
+bound adjective (FASTENED)
+ 
+tied with rope, cord, string, etc.
+（用绳、线等）捆住的，绑住的
 """
