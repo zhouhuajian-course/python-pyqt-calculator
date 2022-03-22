@@ -26,7 +26,6 @@ class Calculator:
         display.setReadOnly(True)
         display.setFixedHeight(35)
         display.setAlignment(Qt.AlignmentFlag.AlignRight)
-        display.returnPressed.connect(self.calculateResult)
         layout.addWidget(display, 0, 0, 1, 4)
         self.display = display
 
@@ -55,7 +54,6 @@ class Calculator:
         """追加显示器文本"""
         sender = self.win.sender()
         self.display.setText(self.display.text() + sender.text())
-        self.display.setFocus()
 
     def clearDisplayText(self):
         """清除显示器文本"""

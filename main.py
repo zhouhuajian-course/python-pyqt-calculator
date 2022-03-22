@@ -58,11 +58,21 @@ class Calculator:
                 layout.addWidget(btn, row + 1, col)
                 if button == 'C':  # clear 清除
                     btn.clicked.connect(self.clearDisplayText)
+                elif button == '=':
+                    btn.clicked.connect(self.calculateResult)
                 else:
                     # 底层的事件 事件函数
                     # 封装后的信号与槽
                     # 多个信号绑定同一个槽函数
                     btn.clicked.connect(self.appendDisplayText)
+
+    def calculateResult(self):
+        """计算结果"""
+        try:
+            res = str(eval(self.display.text()))
+        except:
+            res = "ERROR"
+        self.display.setText(res)
 
     def clearDisplayText(self):
         """清除显示器文本"""
